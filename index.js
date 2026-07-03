@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fishing AI</title>
+<title>光 AI</title>
 <style>
 body { font-family: sans-serif; padding: 20px; background:#f5f5f5; }
 .card { background:white; padding:12px; margin:10px 0; border-radius:10px; }

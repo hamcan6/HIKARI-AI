@@ -41,7 +41,7 @@ h1 { font-size: 22px; }
 </head>
 <body>
 
-<h1>🎣 Fishing AI</h1>
+<h1>🎣 爆釣光AI</h1>
 <div id="list">loading...</div>
 
 <script>

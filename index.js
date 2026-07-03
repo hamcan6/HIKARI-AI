@@ -1,5 +1,4 @@
 const express = require("express");
-
 const app = express();
 
 /* =========================
@@ -51,17 +50,17 @@ async function load() {
   const data = await res.json();
 
   document.getElementById('list').innerHTML =
-    data.map(p => `
+    data.map(p => \`
       <div class="card">
-        <b>${p.fish}</b><br>
-        📍 ${p.area}<br>
-        📅 ${p.date}<br>
-        ⚖️ ${p.size}<br>
-        🎣 ${p.lure}<br>
-        ☀️ ${p.condition}<br>
-        🕒 ${p.time}
+        <b>\${p.fish}</b><br>
+        📍 \${p.area}<br>
+        📅 \${p.date}<br>
+        ⚖️ \${p.size}<br>
+        🎣 \${p.lure}<br>
+        ☀️ \${p.condition}<br>
+        🕒 \${p.time}
       </div>
-    `).join('');
+    \`).join('');
 }
 
 load();
@@ -76,4 +75,4 @@ setInterval(load, 60000);
 /* =========================
    起動（Vercel用）
 ========================= */
-export default app;
+module.exports = app;
